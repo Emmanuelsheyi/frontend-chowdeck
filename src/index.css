@@ -1,0 +1,127 @@
+/* Global stylesheet  */
+
+:root {
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --accent: #ff6600;
+  --muted: #666;
+  --error: #d9534f;
+}
+
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 16px;
+  background: var(--bg);
+  min-height: calc(100vh - 80px);
+}
+
+.signup-card {
+  display: flex;
+  gap: 28px;
+  max-width: 960px;
+  width: 100%;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(23, 23, 23, 0.06);
+  overflow: hidden;
+}
+
+.signup-form {
+  flex: 1 1 420px;
+  padding: 28px 28px;
+}
+
+.signup-illustration {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #fff 0%, #fff9f3 100%);
+  padding: 20px;
+}
+
+.signup-title {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.form-row {
+  margin-bottom: 14px;
+}
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #222;
+}
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.field-error {
+  color: var(--error);
+  font-size: 13px;
+  margin-top: 6px;
+}
+.error {
+  background: #ffecec;
+  color: var(--error);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.signup-btn {
+  background: var(--accent);
+  color: #fff;
+}
+
+.muted {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+
+
+/* Login uses the same layout as signup;*/
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 16px;
+  background: var(--bg);
+  min-height: calc(100vh - 80px);
+}
+.login-card {
+  display: flex;
+  gap: 28px;
+  max-width: 960px;
+  width: 100%;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(23, 23, 23, 0.06);
+  overflow: hidden;
+}
+.login-form {
+  flex: 1 1 420px;
+  padding: 28px;
+}
+.login-title {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
