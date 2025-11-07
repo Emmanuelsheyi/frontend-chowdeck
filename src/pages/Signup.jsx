@@ -86,7 +86,7 @@ const Signup = () => {
             </div>
 
             <div className="form-row">
-              <label className="form-label">Phone</label>
+              <label className="form-label">Phone NO</label>
               <input
                 className="form-input"
                 value={phone}

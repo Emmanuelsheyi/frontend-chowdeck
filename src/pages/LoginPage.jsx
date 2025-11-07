@@ -72,7 +72,7 @@ const LoginPage = () => {
                 to="/forgot"
                 style={{ fontSize: 13, color: "var(--muted)" }}
               >
-                Forgot password?
+                Forgot passwords?
               </Link>
               <button
                 type="submit"
