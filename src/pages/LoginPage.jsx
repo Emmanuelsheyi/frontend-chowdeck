@@ -32,10 +32,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-card">
-        <div className="login-form">
-          <h2 className="login-title">Sign In</h2>
+    <div className="signup-page">
+      <div className="signup-card">
+        <div className="signup-form">
+          <h2 className="signup-title">Sign In</h2>
           {error && <div className="error">{error}</div>}
           <form onSubmit={handleSubmit} noValidate>
             <div className="form-row">
@@ -72,7 +72,7 @@ const LoginPage = () => {
                 to="/forgot"
                 style={{ fontSize: 13, color: "var(--muted)" }}
               >
-                Forgot password?
+                Forgot passwords?
               </Link>
               <button
                 type="submit"

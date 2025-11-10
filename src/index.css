@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 /* Global stylesheet  */
 
 :root {
@@ -6,7 +10,15 @@
   --accent: #ff6600;
   --muted: #666;
   --error: #d9534f;
+  font-family: 'Poppins', sans-serif;
 }
+ 
+/* body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #111;
+} */
 
 .signup-page {
   display: flex;
@@ -15,6 +27,7 @@
   padding: 36px 16px;
   background: var(--bg);
   min-height: calc(100vh - 80px);
+  
 }
 
 .signup-card {
@@ -22,15 +35,23 @@
   gap: 28px;
   max-width: 960px;
   width: 100%;
-  background: var(--card);
+ 
+  background: #f3e5e5; /* light grey */
   border-radius: 10px;
   box-shadow: 0 8px 30px rgba(23, 23, 23, 0.06);
   overflow: hidden;
+  justify-content: center; /* center inner content horizontally */
+  padding: 20px; /* add breathing room */
 }
 
 .signup-form {
   flex: 1 1 420px;
   padding: 28px 28px;
+  max-width: 520px; /* constrain form width */
+  margin: 0 auto; /* center form inside card */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .signup-illustration {
@@ -44,7 +65,8 @@
 
 .signup-title {
   margin: 0 0 12px 0;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: roboto, sans-serif;
 }
 
 .form-row {
@@ -55,9 +77,11 @@
   margin-bottom: 6px;
   font-size: 13px;
   color: #222;
+   font-size: 17px;
 }
 .form-input {
   width: 100%;
+  max-width: 420px;
   padding: 10px 12px;
   border: 1px solid #e6e6e6;
   border-radius: 6px;
@@ -94,9 +118,8 @@
   margin-top: 12px;
   color: var(--muted);
   font-size: 13px;
+  
 }
-
-
 
 /* Login uses the same layout as signup;*/
 .login-page {
@@ -125,3 +148,54 @@
   margin: 0 0 12px 0;
   font-size: 20px;
 }
+
+/* Home hero styles */
+/* .home-page {
+  background: var(--bg);
+  
+}
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  max-width: 1200px;
+  margin:36px auto;
+  padding:28px;
+ 
+  min-height:520px;
+  
+}
+.hero-content {
+  flex: 1 1 520px;
+}
+.hero-title {
+  font-size: 36px;
+  margin: 0 0 12px;
+  color: #0f172a;
+}
+.hero-sub {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.hero-cta-row {
+  margin-top: 12px;
+}
+.order-btn {
+  background: #ef6b57;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+}
+.hero-image {
+  flex: 0 0 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+} */
