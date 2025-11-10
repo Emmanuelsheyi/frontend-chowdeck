@@ -58,3 +58,7 @@ This README summarizes the work done in this frontend workspace and how to run a
    - `/signup` — sign up flow
    - `/login` — sign in flow
      (for now no backend endpoint tho)
+
+
+<!-- to view screenshot for both the sign up and log in page ....  -->
+frontend-chowdeck/assets
